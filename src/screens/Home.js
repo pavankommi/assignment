@@ -14,7 +14,7 @@ export default function Home() {
                 <Header />
                 <Content />
                 <Footer>
-                    <FooterComponent/>
+                    <FooterComponent />
                 </Footer>
             </Layout>
         </>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import '../styles/Content.css'
 import 'antd/dist/antd.css';
-import { Input, Select, Pagination } from 'antd';
+import { Input, Select, Pagination, Space, Spin } from 'antd';
 
 export default function Content() {
 
@@ -88,7 +88,11 @@ export default function Content() {
             </div>
             {
                 data === {} ?
-                    <div>Loading...</div> :
+                    <div className='spinnerStyle'>
+                        <Space size="middle">
+                            <Spin size="large" />
+                        </Space>
+                    </div> :
                     <div>
                         {
                             data.hits ?
@@ -117,13 +121,21 @@ export default function Content() {
                                         <div className='subsStyle'>{e.points} points | {e.author} | {new Date(e.created_at).toString().substring(4, 15)} | {e.num_comments ? e.num_comments : 0} comments</div>
                                     </div>
                                 ) :
-                                <div>Loading...</div>
+                                <div className='spinnerStyle'>
+                                    <Space size="middle">
+                                        <Spin size="large" />
+                                    </Space>
+                                </div>
                         }
                     </div>
             }
-            <div className='paginationStyle'>
-                <Pages handlePage={handlePage} pageNum={pageNum} />
-            </div>
+            {
+                data.hits ?
+                    <div className='paginationStyle'>
+                        <Pages handlePage={handlePage} pageNum={pageNum} />
+                    </div> :
+                    <div></div>
+            }
         </div>
     )
 }
