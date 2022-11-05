@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "assignment",
+    "name": "Assignment",
     "slug": "assignment",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -27,7 +27,7 @@
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.ico"
     }
   }
 }

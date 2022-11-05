@@ -153,6 +153,7 @@ export const SearchFilter = ({ handleStories, handleDate, handleTime }) => {
                 defaultValue="Stories"
                 style={{ width: 120 }}
                 onChange={(value) => handleStories(value)}
+                size={'small'}
                 options={[
                     {
                         value: 'all',
@@ -172,6 +173,7 @@ export const SearchFilter = ({ handleStories, handleDate, handleTime }) => {
                 defaultValue="Popularity"
                 style={{ width: 120, marginLeft: 3 }}
                 onChange={(value) => handleDate(value)}
+                size={'small'}
                 options={[
                     {
                         value: 'Popularity',
