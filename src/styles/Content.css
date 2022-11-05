@@ -1,0 +1,75 @@
+.itemContainer {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.titleAndDividerStyle {
+    display: flex;
+    flex-direction: row;
+}
+
+.divider {
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.urlStyle {
+    color: rgb(97, 97, 97);
+    cursor: pointer;
+}
+
+.filterStyle {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.paginationStyle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 280px) {
+    .itemTitle {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .itemTitle {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 280px) {
+    .container {
+        background-color: rgb(224, 224, 224);
+        padding: 1%;
+        font-size: smaller;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .container {
+        background-color: rgb(224, 224, 224);
+        padding: 1%;
+        font-size: small;
+    }
+}
+
+@media screen and (min-width: 280px) {
+    .subsStyle {
+        color: rgb(97, 97, 97);
+        font-size: smaller;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .subsStyle {
+        color: rgb(97, 97, 97);
+        font-size: small;
+    }
+}

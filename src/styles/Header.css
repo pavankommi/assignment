@@ -1,0 +1,109 @@
+.headerContainer {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    padding: 7px;
+    background-color: orangered;
+}
+
+.headerLeft {
+    display: flex;
+    flex-direction: row;
+}
+
+.iconStyle {
+    margin-right: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: medium;
+}
+
+
+
+.menuItemsStyle {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 280px) {
+    .titleStyles {
+        margin-right: 5px;
+        cursor: pointer;
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+        font-size: medium;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .titleStyles {
+        margin-right: 5px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: medium;
+    }
+}
+
+
+@media screen and (min-width: 280px) {
+    .loginStyle{
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: smaller;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .loginStyle{
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 280px) {
+    .titleAndMenuStyle {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .titleAndMenuStyle {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
+@media screen and (min-width: 280px) {
+    .menuStyle {
+        margin-right: 10px;
+        /* margin-left: 10px; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 30vh;
+        font-size: x-small;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .menuStyle {
+        margin-right: 20px;
+        margin-left: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 60vh;
+        font-size: medium;
+    }
+}
