@@ -12,7 +12,7 @@ export default function Content() {
     const [stories, setStories] = useState('')
     const [searchBy, setSearchBy] = useState('search')
     const [timePeriod, setTimePeriod] = useState(0)
-    const [url, setUrl] = useState('http://hn.algolia.com/api/v1')
+    const [url, setUrl] = useState('https://hn.algolia.com/api/v1')
 
     const [searchString, setSearchString] = useState('')
 
@@ -138,7 +138,7 @@ export const SearchBar = ({ onSearch }) => {
                 placeholder="Search stories by title, url or author"
                 allowClear
                 enterButton="Search"
-                size="large"
+                size="middle"
                 onSearch={(val) => onSearch(val)}
             />
         </div>

@@ -92,8 +92,8 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 30vh;
-        font-size: x-small;
+        width: 34vh;
+        font-size: smaller;
     }
 }
 
@@ -105,7 +105,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        width: 60vh;
+        width: 65vh;
         font-size: medium;
     }
 }

@@ -57,7 +57,7 @@ export default function Header() {
                 </div>
             </div>
             <div className='loginStyle'>
-                login
+                {/* login */}
             </div>
         </div>
     )
